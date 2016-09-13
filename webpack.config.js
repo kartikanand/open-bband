@@ -1,8 +1,8 @@
 module.exports = {
 
-    entry: './src/scripts/main.js',
+    entry: './bband/bband/static/js/main.js',
     output: {
-        path: 'www',
+        path: './bband/bband/static/build',
         filename: 'bundle.js'
     },
     module: {
@@ -10,7 +10,7 @@ module.exports = {
             {
                 test: /\.js/,
                 loader: 'babel',
-                include: __dirname + '/src/scripts',
+                include: __dirname + '/bband/bband/static/js',
                 query: {
                     presets: ['es2015', 'react']
                 }
